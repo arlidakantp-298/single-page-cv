@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Roadmap Skill & Kurikulum SIJA</title>
+    <style>
+        :root {
+            --bg-color: #0f172a;
+            --card-bg: #1e293b;
+            --accent-blue: #38bdf8;
+            --accent-purple: #a855f7;
+            --text-main: #f8fafc;
+            --text-muted: #94a3b8;
+            --border: #334155;
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        body {
+            background-color: var(--bg-color);
+            color: var(--text-main);
+            padding: 2rem 1rem;
+            line-height: 1.6;
+        }
+
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+        }
+
+        header {
+            text-align: center;
+            margin-bottom: 3rem;
+        }
+
+        header h1 {
+            font-size: 2.2rem;
+            color: var(--accent-blue);
+            margin-bottom: 0.5rem;
+        }
+
+        header p {
+            color: var(--text-muted);
+            font-size: 1.1rem;
+        }
+
+        .timeline {
+            display: flex;
+            flex-direction: column;
+            gap: 1.5rem;
+        }
+
+        .card {
+            background-color: var(--card-bg);
+            border: 1px solid var(--border);
+            border-radius: 12px;
+            padding: 1.5rem;
+            transition: transform 0.2s ease, border-color 0.2s ease;
+        }
+
+        .card:hover {
+            transform: translateY(-3px);
+            border-color: var(--accent-blue);
+        }
+
+        .card-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 1rem;
+            border-bottom: 1px solid var(--border);
+            padding-bottom: 0.75rem;
+        }
+
+        .year-title {
+            font-size: 1.3rem;
+            font-weight: 600;
+            color: var(--accent-purple);
+        }
+
+        .badge {
+            background-color: rgba(56, 189, 248, 0.1);
+            color: var(--accent-blue);
+            padding: 0.25rem 0.75rem;
+            border-radius: 20px;
+            font-size: 0.85rem;
+            font-weight: 500;
+        }
+
+        .skills-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+            gap: 1rem;
+        }
+
+        .skill-group h4 {
+            color: var(--text-main);
+            margin-bottom: 0.5rem;
+            font-size: 1rem;
+        }
+
+        .skill-group ul {
+            list-style: none;
+        }
+
+        .skill-group li {
+            color: var(--text-muted);
+            font-size: 0.9rem;
+            margin-bottom: 0.3rem;
+            position: relative;
+            padding-left: 1.2rem;
+        }
+
+        .skill-group li::before {
+            content: "▹";
+            position: absolute;
+            left: 0;
+            color: var(--accent-blue);
+        }
+
+        footer {
+            text-align: center;
+            margin-top: 3rem;
+            color: var(--text-muted);
+            font-size: 0.9rem;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <header>
+        <h1>Roadmap SIJA</h1>
+        <p>Sistem Informasi, Jaringan, dan Aplikasi</p>
+    </header>
+
+    <div class="timeline">
+        <!-- Kelas 10 -->
+        <div class="card">
+            <div class="card-header">
+                <span class="year-title">Tingkat I (Kelas 10)</span>
+                <span class="badge">Fondasi IT</span>
+            </div>
+            <div class="skills-grid">
+                <div class="skill-group">
+                    <h4>Dasar Pemrograman & Web</h4>
+                    <ul>
+                        <li>Algoritma & Logika Pemrograman</li>
+                        <li>HTML5, CSS3, JavaScript Dasar</li>
+                        <li>Git & Version Control dasar</li>
+                    </ul>
+                </div>
+                <div class="skill-group">
+                    <h4>Jaringan & Hardware</h4>
+                    <ul>
+                        <li>Konsep Dasar Jaringan (IP, Subnetting)</li>
+                        <li>Perakitan Hardware & OS Linux (Debian/Ubuntu)</li>
+                        <li>Cisco Packet Tracer Basics</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <!-- Kelas 11 -->
+        <div class="card">
+            <div class="card-header">
+                <span class="year-title">Tingkat II (Kelas 11)</span>
+                <span class="badge">Infrastruktur & Web Dev</span>
+            </div>
+            <div class="skills-grid">
+                <div class="skill-group">
+                    <h4>Administrasi Server & Cloud</h4>
+                    <ul>
+                        <li>Linux Server (DNS, DHCP, Web Server, Database)</li>
+                        <li>Containerization (Docker & Docker Compose)</li>
+                        <li>Network Security & Firewall Setup</li>
+                    </ul>
+                </div>
+                <div class="skill-group">
+                    <h4>Fullstack Development</h4>
+                    <ul>
+                        <li>Modern Web Frameworks (React / Node.js)</li>
+                        <li>RESTful API & Relational DB (MySQL)</li>
+                        <li>IoT Hardware Integration (Arduino / ESP32)</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <!-- Kelas 12 -->
+        <div class="card">
+            <div class="card-header">
+                <span class="year-title">Tingkat III (Kelas 12)</span>
+                <span class="badge">Sistem Terintegrasi & Proyek</span>
+            </div>
+            <div class="skills-grid">
+                <div class="skill-group">
+                    <h4>Arsitektur Lanjutan</h4>
+                    <ul>
+                        <li>Deployment & CI/CD Pipeline</li>
+                        <li>Mikroservis & Cloud Infrastructure</li>
+                        <li>Sistem Keamanan Jaringan Terintegrasi</li>
+                    </ul>
+                </div>
+                <div class="skill-group">
+                    <h4>Pengembangan Produk</h4>
+                    <ul>
+                        <li>Perancangan Sistem Produk Industri/Kreatif</li>
+                        <li>Proyek Aplikasi Berbasis Microcontroller & Web</li>
+                        <li>Dokumentasi & Arsitektur Software</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <!-- Kelas 13 -->
+        <div class="card">
+            <div class="card-header">
+                <span class="year-title">Tingkat IV (Kelas 13)</span>
+                <span class="badge">Praktik Kerja Industri & Sertifikasi</span>
+            </div>
+            <div class="skills-grid">
+                <div class="skill-group">
+                    <h4>Pengalaman Industri</h4>
+                    <ul>
+                        <li>Prakerin / Magang Industri (1 Tahun)</li>
+                        <li>Troubleshooting & Maintenance Sistem Nyata</li>
+                        <li>Kolaborasi Tim & Software Architecture</li>
+                    </ul>
+                </div>
+                <div class="skill-group">
+                    <h4>Sertifikasi & Kualifikasi</h4>
+                    <ul>
+                        <li>Sertifikasi Kompetensi Industri / LSP</li>
+                        <li>Uji Komprehensif Portofolio SIJA</li>
+                        <li>Persiapan Karir (DevOps, Network Spec, Fullstack)</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <p>Portofolio & Roadmap Sistem Informasi, Jaringan, dan Aplikasi</p>
+    </footer>
+</div>
+
+</body>
+</html>
